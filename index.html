@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JC North Engineering | Ontario, Canada</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body { font-family: 'Inter', sans-serif; }
+html { scroll-behavior: smooth; }
+
+/* Fade-in Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+</style>
+</head>
+
+<body class="text-gray-700 bg-white">
+
+<!-- ================= NAVBAR ================= -->
+<header class="fixed w-full bg-white shadow-sm z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+    <h1 class="text-2xl font-bold text-blue-900">JC North Engineering</h1>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex space-x-8 text-sm font-medium text-gray-600">
+      <a href="#home" class="hover:text-blue-900">Home</a>
+      <a href="#about" class="hover:text-blue-900">About</a>
+      <a href="#services" class="hover:text-blue-900">Services</a>
+      <a href="#projects" class="hover:text-blue-900">Projects</a>
+      <a href="#contact" class="hover:text-blue-900">Contact</a>
+    </nav>
+
+    <!-- Mobile Hamburger -->
+    <button id="menuBtn" class="md:hidden focus:outline-none">
+      <svg class="w-7 h-7 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+    <nav class="flex flex-col px-6 py-4 space-y-4 text-gray-600 font-medium">
+      <a href="#home" class="hover:text-blue-900">Home</a>
+      <a href="#about" class="hover:text-blue-900">About</a>
+      <a href="#services" class="hover:text-blue-900">Services</a>
+      <a href="#projects" class="hover:text-blue-900">Projects</a>
+      <a href="#contact" class="hover:text-blue-900">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="h-20"></div>
+
+<!-- ================= HERO ================= -->
+<section id="home" class="py-24 bg-gray-50 fade-in">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 class="text-4xl md:text-5xl font-bold text-blue-900 mb-6">
+      Engineering Excellence Across Ontario
+    </h2>
+    <p class="text-lg text-gray-600 mb-8">
+      Structural, civil, and industrial engineering solutions for commercial
+      and infrastructure projects throughout Ontario.
+    </p>
+    <a href="#contact" class="bg-blue-900 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-800 transition">
+      Request Consultation
+    </a>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="py-24 bg-white fade-in">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+    <div>
+      <h3 class="text-3xl font-bold text-blue-900 mb-6">
+        About JC North Engineering
+      </h3>
+      <p class="mb-4 text-gray-600">
+        JC North Engineering is an Ontario-based firm delivering reliable,
+        compliant, and efficient engineering solutions.
+      </p>
+      <p class="text-gray-600">
+        We combine technical expertise with practical execution to ensure
+        successful project outcomes for commercial and industrial clients.
+      </p>
+    </div>
+
+    <div class="bg-gray-100 p-8 rounded-2xl shadow-sm">
+      <h4 class="font-semibold text-blue-900 mb-4">Why Choose Us</h4>
+      <ul class="space-y-3 text-gray-600">
+        <li>✔ Ontario Building Code Compliance</li>
+        <li>✔ Experienced Engineering Professionals</li>
+        <li>✔ End-to-End Project Coordination</li>
+        <li>✔ Timely & Efficient Delivery</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="services" class="py-24 bg-gray-50 fade-in">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h3 class="text-3xl font-bold text-blue-900 mb-12">Our Services</h3>
+
+    <div class="grid md:grid-cols-3 gap-10 text-left">
+
+      <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition">
+        <h4 class="text-xl font-semibold mb-4 text-blue-900">Structural Engineering</h4>
+        <p class="text-gray-600">Design and evaluation of commercial and industrial structures.</p>
+      </div>
+
+      <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition">
+        <h4 class="text-xl font-semibold mb-4 text-blue-900">Civil Engineering</h4>
+        <p class="text-gray-600">Site development, grading, drainage and infrastructure planning.</p>
+      </div>
+
+      <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition">
+        <h4 class="text-xl font-semibold mb-4 text-blue-900">Project Management</h4>
+        <p class="text-gray-600">Full project oversight from planning through completion.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="py-24 bg-white fade-in">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h3 class="text-3xl font-bold text-blue-900 mb-12">Selected Projects</h3>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="border rounded-2xl p-6 hover:shadow-md transition">
+        <h4 class="font-semibold mb-2">Commercial Office Complex</h4>
+        <p class="text-sm text-gray-500">Toronto, Ontario</p>
+      </div>
+
+      <div class="border rounded-2xl p-6 hover:shadow-md transition">
+        <h4 class="font-semibold mb-2">Industrial Manufacturing Facility</h4>
+        <p class="text-sm text-gray-500">Hamilton, Ontario</p>
+      </div>
+
+      <div class="border rounded-2xl p-6 hover:shadow-md transition">
+        <h4 class="font-semibold mb-2">Infrastructure Upgrade Project</h4>
+        <p class="text-sm text-gray-500">Ottawa, Ontario</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="py-24 bg-gray-50 fade-in">
+  <div class="max-w-4xl mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center text-blue-900 mb-10">Contact Us</h3>
+
+    <form class="grid gap-6 bg-white p-10 rounded-2xl shadow-sm">
+      <input type="text" placeholder="Full Name" class="border p-4 rounded-lg">
+      <input type="email" placeholder="Email Address" class="border p-4 rounded-lg">
+      <textarea placeholder="Project Details" class="border p-4 rounded-lg h-32"></textarea>
+      <button class="bg-blue-900 text-white py-4 rounded-lg hover:bg-blue-800 transition">
+        Submit Inquiry
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-blue-900 text-white py-10 text-center">
+  <p>© 2026 JC North Engineering | Ontario, Canada</p>
+</footer>
+
+<!-- ================= FLOATING CALL BUTTON ================= -->
+<a href="tel:+14165551234"
+   class="fixed bottom-6 right-6 bg-blue-900 text-white p-4 rounded-full shadow-lg hover:bg-blue-800 transition flex items-center justify-center z-50">
+  <svg xmlns="http://www.w3.org/2000/svg"
+       class="h-6 w-6"
+       fill="none"
+       viewBox="0 0 24 24"
+       stroke="currentColor"
+       stroke-width="2">
+    <path stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3 5a2 2 0 012-2h3.28a2 2 0 011.95 1.57l.5 2A2 2 0 0110.8 8H9a11 11 0 005 5v-1.8a2 2 0 011.43-1.93l2-.5A2 2 0 0119 11.72V15a2 2 0 01-2 2h-1C8.82 17 4 12.18 4 6V5z" />
+  </svg>
+</a>
+
+<!-- ================= JS ================= -->
+<script>
+// Mobile Menu Toggle
+const menuBtn = document.getElementById('menuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+
+menuBtn.addEventListener('click', () => {
+  mobileMenu.classList.toggle('hidden');
+});
+
+// Fade-in Animation
+const faders = document.querySelectorAll('.fade-in');
+
+const appearOnScroll = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    entry.target.classList.add('visible');
+    observer.unobserve(entry.target);
+  });
+}, { threshold: 0.2 });
+
+faders.forEach(fader => {
+  appearOnScroll.observe(fader);
+});
+</script>
+
+</body>
+</html>
