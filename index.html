@@ -25,21 +25,30 @@ html { scroll-behavior: smooth; }
 </style>
 </head>
 
-<body class="text-gray-700 bg-white">
+<body class="text-gray-800 bg-white">
 
 <!-- ================= NAVBAR ================= -->
-<header class="fixed w-full bg-white shadow-sm z-50">
-  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+<header class="fixed w-full bg-white shadow-sm z-50 border-b border-orange-100">
+  <div class="max-w-7xl mx-auto px-6 py-3 md:py-4 flex justify-between items-center">
 
-    <h1 class="text-2xl font-bold text-blue-900">JC North Engineering</h1>
+    <div class="flex items-center gap-4">
+      <img
+        src="logo.png"
+        alt="JC North Engineering Logo"
+        class="h-20 sm:h-24 md:h-28 lg:h-32 w-auto object-contain"
+      >
+      <h1 class="hidden lg:block text-2xl font-extrabold text-orange-500 tracking-wide leading-none">
+        JC NORTH ENGINEERING
+      </h1>
+    </div>
 
     <!-- Desktop Menu -->
     <nav class="hidden md:flex space-x-8 text-sm font-medium text-gray-600">
-      <a href="#home" class="hover:text-blue-900">Home</a>
-      <a href="#about" class="hover:text-blue-900">About</a>
-      <a href="#services" class="hover:text-blue-900">Services</a>
-      <a href="#projects" class="hover:text-blue-900">Projects</a>
-      <a href="#contact" class="hover:text-blue-900">Contact</a>
+      <a href="#home" class="hover:text-orange-500">Home</a>
+      <a href="#about" class="hover:text-orange-500">About</a>
+      <a href="#services" class="hover:text-orange-500">Services</a>
+      <a href="#projects" class="hover:text-orange-500">Projects</a>
+      <a href="#contact" class="hover:text-orange-500">Contact</a>
     </nav>
 
     <!-- Mobile Hamburger -->
@@ -54,28 +63,27 @@ html { scroll-behavior: smooth; }
   <!-- Mobile Menu -->
   <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
     <nav class="flex flex-col px-6 py-4 space-y-4 text-gray-600 font-medium">
-      <a href="#home" class="hover:text-blue-900">Home</a>
-      <a href="#about" class="hover:text-blue-900">About</a>
-      <a href="#services" class="hover:text-blue-900">Services</a>
-      <a href="#projects" class="hover:text-blue-900">Projects</a>
-      <a href="#contact" class="hover:text-blue-900">Contact</a>
+      <a href="#home" class="hover:text-orange-500">Home</a>
+      <a href="#about" class="hover:text-orange-500">About</a>
+      <a href="#services" class="hover:text-orange-500">Services</a>
+      <a href="#projects" class="hover:text-orange-500">Projects</a>
+      <a href="#contact" class="hover:text-orange-500">Contact</a>
     </nav>
   </div>
 </header>
 
-<div class="h-20"></div>
+<div class="h-28 md:h-32 lg:h-36"></div>
 
 <!-- ================= HERO ================= -->
-<section id="home" class="py-24 bg-gray-50 fade-in">
+<section id="home" class="py-24 bg-gradient-to-b from-blue-900 to-gray-900 fade-in">
   <div class="max-w-6xl mx-auto px-6 text-center">
-    <h2 class="text-4xl md:text-5xl font-bold text-blue-900 mb-6">
+    <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
       Engineering Excellence Across Ontario
     </h2>
-    <p class="text-lg text-gray-600 mb-8">
-      Structural, civil, and industrial engineering solutions for commercial
-      and infrastructure projects throughout Ontario.
+    <p class="text-lg text-gray-200 mb-8">
+      
     </p>
-    <a href="#contact" class="bg-blue-900 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-800 transition">
+    <a href="#contact" class="inline-flex items-center justify-center bg-orange-500 text-white px-8 py-3 rounded-full shadow-lg hover:bg-orange-400 transition font-semibold">
       Request Consultation
     </a>
   </div>
@@ -86,25 +94,24 @@ html { scroll-behavior: smooth; }
   <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
 
     <div>
-      <h3 class="text-3xl font-bold text-blue-900 mb-6">
+      <h3 class="text-3xl font-bold text-blue-900 mb-2">
         About JC North Engineering
       </h3>
+      <div class="w-20 h-1 bg-orange-500 rounded mb-6"></div>
       <p class="mb-4 text-gray-600">
-        JC North Engineering is an Ontario-based firm delivering reliable,
-        compliant, and efficient engineering solutions.
+        At JC North Engineering, we provide professional mechanical engineering services delivering sustainable, reliable and efficient solutions.
       </p>
       <p class="text-gray-600">
-        We combine technical expertise with practical execution to ensure
-        successful project outcomes for commercial and industrial clients.
+        We foster a culture of integrity, collaboration, and continuous improvement, ensuring that every project we undertake meets the highest standards of quality and safety.
       </p>
     </div>
 
-    <div class="bg-gray-100 p-8 rounded-2xl shadow-sm">
+    <div class="bg-gray-50 p-8 rounded-2xl shadow-sm border-l-4 border-orange-500">
       <h4 class="font-semibold text-blue-900 mb-4">Why Choose Us</h4>
-      <ul class="space-y-3 text-gray-600">
-        <li>✔ Ontario Building Code Compliance</li>
-        <li>✔ Experienced Engineering Professionals</li>
-        <li>✔ End-to-End Project Coordination</li>
+      <ul class="space-y-3 text-gray-700">
+        <li>✔ Integrity</li>
+        <li>✔ Accountability</li>
+        <li>✔ Excellence</li>
         <li>✔ Timely & Efficient Delivery</li>
       </ul>
     </div>
@@ -115,23 +122,29 @@ html { scroll-behavior: smooth; }
 <!-- ================= SERVICES ================= -->
 <section id="services" class="py-24 bg-gray-50 fade-in">
   <div class="max-w-6xl mx-auto px-6 text-center">
-    <h3 class="text-3xl font-bold text-blue-900 mb-12">Our Services</h3>
+    <h3 class="text-3xl font-bold text-blue-900 mb-2">Our Services</h3>
+    <div class="w-24 h-1 bg-orange-500 rounded mx-auto mb-10"></div>
 
     <div class="grid md:grid-cols-3 gap-10 text-left">
 
-      <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition">
-        <h4 class="text-xl font-semibold mb-4 text-blue-900">Structural Engineering</h4>
-        <p class="text-gray-600">Design and evaluation of commercial and industrial structures.</p>
+      <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition border-t-4 border-orange-500">
+        <h4 class="text-xl font-semibold mb-4 text-blue-900">Mechanical Engineering Services </h4>
+        <p class="text-gray-700"><li>Building Assessment Reports</li></p>
+        <p class="text-gray-700"><li>Feasibility Studies</li></p>
+        <p class="text-gray-700"><li>Mechanical Building System Design</li></p>
+        <p class="text-gray-700"><li>ASME Code Design
+        (Section VIII Division 1 & 2)</li></p>
+        <p class="text-gray-700"><li>Canadian Registration Number (CRN)</li></p>
       </div>
 
-      <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition">
-        <h4 class="text-xl font-semibold mb-4 text-blue-900">Civil Engineering</h4>
-        <p class="text-gray-600">Site development, grading, drainage and infrastructure planning.</p>
+      <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition border-t-4 border-blue-900">
+        <h4 class="text-xl font-semibold mb-4 text-blue-900">Construction Administration Services</h4>
+        <p class="text-gray-700">Construction oversight and contract administration to ensure quality, compliance, and performance</p>
       </div>
 
-      <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition">
-        <h4 class="text-xl font-semibold mb-4 text-blue-900">Project Management</h4>
-        <p class="text-gray-600">Full project oversight from planning through completion.</p>
+      <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition border-t-4 border-orange-500">
+        <h4 class="text-xl font-semibold mb-4 text-blue-900">Project Management Services</h4>
+        <p class="text-gray-700">Full project oversight from planning through completion</p>
       </div>
 
     </div>
@@ -141,22 +154,23 @@ html { scroll-behavior: smooth; }
 <!-- ================= PROJECTS ================= -->
 <section id="projects" class="py-24 bg-white fade-in">
   <div class="max-w-6xl mx-auto px-6 text-center">
-    <h3 class="text-3xl font-bold text-blue-900 mb-12">Selected Projects</h3>
+    <h3 class="text-3xl font-bold text-blue-900 mb-2">Selected Projects</h3>
+    <div class="w-28 h-1 bg-orange-500 rounded mx-auto mb-10"></div>
 
     <div class="grid md:grid-cols-3 gap-8">
-      <div class="border rounded-2xl p-6 hover:shadow-md transition">
-        <h4 class="font-semibold mb-2">Commercial Office Complex</h4>
-        <p class="text-sm text-gray-500">Toronto, Ontario</p>
+      <div class="border border-blue-100 rounded-2xl p-6 hover:shadow-md transition hover:border-orange-400">
+        <h4 class="font-semibold mb-2">Commercial Office Complex, Toronto, ON</h4>
+        <p class="text-sm text-gray-500">Chiller and Cooling Tower Replacement Project</p>
       </div>
 
-      <div class="border rounded-2xl p-6 hover:shadow-md transition">
-        <h4 class="font-semibold mb-2">Industrial Manufacturing Facility</h4>
-        <p class="text-sm text-gray-500">Hamilton, Ontario</p>
+      <div class="border border-blue-100 rounded-2xl p-6 hover:shadow-md transition hover:border-orange-400">
+        <h4 class="font-semibold mb-2">Industrial Manufacturing Facility, Ontario</h4>
+        <p class="text-sm text-gray-500">Roof Top Unit Replacement Project</p>
       </div>
 
-      <div class="border rounded-2xl p-6 hover:shadow-md transition">
-        <h4 class="font-semibold mb-2">Infrastructure Upgrade Project</h4>
-        <p class="text-sm text-gray-500">Ottawa, Ontario</p>
+      <div class="border border-blue-100 rounded-2xl p-6 hover:shadow-md transition hover:border-orange-400">
+        <h4 class="font-semibold mb-2">Carrier Air-Conditioning Divsion</h4>
+        <p class="text-sm text-gray-500">Heat Exchanger Design</p>
       </div>
     </div>
   </div>
@@ -165,12 +179,13 @@ html { scroll-behavior: smooth; }
 <!-- ================= CONTACT ================= -->
 <section id="contact" class="py-24 bg-gray-50 fade-in">
   <div class="max-w-4xl mx-auto px-6">
-    <h3 class="text-3xl font-bold text-center text-blue-900 mb-10">Contact Us</h3>
+    <h3 class="text-3xl font-bold text-center text-blue-900 mb-2">Contact Us</h3>
+    <div class="w-24 h-1 bg-orange-500 rounded mx-auto mb-10"></div>
 
-    <form class="grid gap-6 bg-white p-10 rounded-2xl shadow-sm">
-      <input type="text" placeholder="Full Name" class="border p-4 rounded-lg">
-      <input type="email" placeholder="Email Address" class="border p-4 rounded-lg">
-      <textarea placeholder="Project Details" class="border p-4 rounded-lg h-32"></textarea>
+    <form class="grid gap-6 bg-white p-10 rounded-2xl shadow-sm border-t-4 border-orange-500">
+      <input type="text" placeholder="Full Name" class="border border-blue-100 focus:border-orange-500 focus:outline-none p-4 rounded-lg">
+      <input type="email" placeholder="Email Address" class="border border-blue-100 focus:border-orange-500 focus:outline-none p-4 rounded-lg">
+      <textarea placeholder="Project Details" class="border border-blue-100 focus:border-orange-500 focus:outline-none p-4 rounded-lg h-32"></textarea>
       <button class="bg-blue-900 text-white py-4 rounded-lg hover:bg-blue-800 transition">
         Submit Inquiry
       </button>
@@ -179,13 +194,13 @@ html { scroll-behavior: smooth; }
 </section>
 
 <!-- ================= FOOTER ================= -->
-<footer class="bg-blue-900 text-white py-10 text-center">
+<footer class="bg-blue-900 text-white py-10 text-center border-t-4 border-orange-500">
   <p>© 2026 JC North Engineering | Ontario, Canada</p>
 </footer>
 
 <!-- ================= FLOATING CALL BUTTON ================= -->
-<a href="tel:+14165551234"
-   class="fixed bottom-6 right-6 bg-blue-900 text-white p-4 rounded-full shadow-lg hover:bg-blue-800 transition flex items-center justify-center z-50">
+<a href="tel:+14165692601"
+   class="fixed bottom-6 right-6 bg-gradient-to-r from-orange-500 to-blue-900 text-white p-4 rounded-full shadow-lg hover:opacity-90 transition flex items-center justify-center z-50">
   <svg xmlns="http://www.w3.org/2000/svg"
        class="h-6 w-6"
        fill="none"
